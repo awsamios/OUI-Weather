@@ -104,7 +104,7 @@ extension WeatherTableViewController: WeatherDisplayLogic {
   }
   
   func hideLoader() {
-    self.hudIndicator?.dismiss(afterDelay: 3.0)
+    self.hudIndicator?.dismiss(afterDelay: 0.0)
   }
 }
 

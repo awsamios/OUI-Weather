@@ -35,7 +35,6 @@ class WeatherInteractor: WeatherBusinessLogic, WeatherListDataStore {
 
     }).catch { error in
         self.presenter?.hideLoader()
-      // show an error
     }
   }
 }

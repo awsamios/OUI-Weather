@@ -70,7 +70,7 @@ public enum WeatherRequests: Request {
       return "data/2.5/forecast"
       
     case .fetchIconByName(let iconName):
-      return "img/w/\(iconName).png"
+      return "/img/w/\(iconName).png"
     }
   }
   

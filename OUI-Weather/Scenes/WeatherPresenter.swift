@@ -109,12 +109,12 @@ class WeatherPresenter: WeatherPresentationLogic {
       return nil
     }
     
-    
+
     return WeatherCases.FetchWeather.ViewModel.DisplayedWeather(
       minTemp: "\(String(describing: mintemp))°",
       maxTemp: "\(String(describing:maxTemp))°",
       description: weather?.weatherDetails?.description ?? "",
-      iconUrl: URL(string: "http://openweathermap.org/img/w/\(weather?.weatherDetails?.icon ?? "").png"),
+      iconUrl: URL(string: apiHost+WeatherRequests.fetchIconByName(weather?.weatherDetails?.icon ?? "").path),
       time: "\(Calendar.current.component(.hour, from: weather?.fullDate ?? Date()))h",
       fullDate: weather?.fullDateString ?? "",
       readableDay: weather?.fullDate.dayOfWeek() ?? "",
