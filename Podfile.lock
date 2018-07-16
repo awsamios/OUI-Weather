@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.7.2)
+  - JGProgressHUD (2.0.3)
+  - Kingfisher (4.8.0)
+  - PromiseKit (6.2.8):
+    - PromiseKit/CorePromise (= 6.2.8)
+    - PromiseKit/Foundation (= 6.2.8)
+    - PromiseKit/UIKit (= 6.2.8)
+  - PromiseKit/CorePromise (6.2.8)
+  - PromiseKit/Foundation (6.2.8):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.2.8):
+    - PromiseKit/CorePromise
+  - SwiftyJSON (4.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - JGProgressHUD
+  - Kingfisher (~> 4.0)
+  - PromiseKit (~> 6.0)
+  - SwiftyJSON (~> 4.0)
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  JGProgressHUD: 12b20a8f4ffe05258f8635c1ab92816e451f904d
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
+  PromiseKit: 6788ce1a0ed5448b83d4aaf56b9fc49fb7647d32
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+
+PODFILE CHECKSUM: 696a6500a0a162e16681f672532139c1cc23e35c
+
+COCOAPODS: 1.4.0
