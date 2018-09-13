@@ -34,11 +34,7 @@ enum WeatherCases {
         var readableDay: String
         var cityName: String
         
-        init() {
-          self.init(minTemp: "", maxTemp: "", description: "", iconUrl: nil, time: "", fullDate: "", readableDay: "", cityName: "")
-        }
-        
-        init(minTemp: String, maxTemp: String, description: String, iconUrl: URL?, time: String, fullDate: String, readableDay: String, cityName: String) {
+        init(minTemp: String = "", maxTemp: String = "", description: String = "", iconUrl: URL? = nil, time: String = "", fullDate: String = "", readableDay: String = "", cityName: String = "") {
           self.minTemp = minTemp
           self.maxTemp = maxTemp
           self.description = description
@@ -50,7 +46,6 @@ enum WeatherCases {
         }
       }
       
-     
       var displayedWeatherList: [DisplayedWeather]
       var currentDayWeather: (DisplayedWeather, [DisplayedWeather])
     }
@@ -118,7 +113,7 @@ public enum WeatherRequests: Request {
 
 public protocol Request {
   
-  /// Relative path of the endpoint we want to call (ie. `/users/login`)
+  /// Relative path of the endpoint we want to call
   var path: String { get }
   
   /// This define the HTTP method we should use to perform the call

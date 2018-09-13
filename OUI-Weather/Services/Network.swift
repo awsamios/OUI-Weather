@@ -15,10 +15,9 @@ let apiId = "9e878267a7354c1d0315f3c64b9a4c89"
 let apiHost = "http://api.openweathermap.org"
 
 
-
 /// The dispatcher is responsible to execute a Request
 /// by calling the Alamofire
-/// As output for a Request it should provide a ServiceResult.
+/// As output for a Request it should provide a Promise with the result.
 public protocol Dispatcher {
   
   /// Configure the dispatcher with an environment
@@ -27,13 +26,13 @@ public protocol Dispatcher {
   init(environment: Environment)
   
   
-  
   /// This function execute the request and provide a Promise
   /// with the response.
   ///
   /// - Parameter request: request to execute
   /// - Returns: promise
   func executeJSON(request: Request) throws -> Promise<JSON>
+  
   func execute(request: Request) throws -> Promise<Data>
 }
 
